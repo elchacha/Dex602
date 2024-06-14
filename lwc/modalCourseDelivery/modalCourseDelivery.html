@@ -1,0 +1,23 @@
+<template>
+    <lightning-modal-body>
+        <lightning-card title="Add New Course Delivery">
+            <div class="slds-var-p-around_medium">
+                <lightning-record-edit-form object-api-name="Course_Delivery__c" onsuccess={doSuccess}>
+                    <lightning-messages></lightning-messages>
+                    <lightning-input-field field-name="Instructor__c" value={content}></lightning-input-field>
+                    <lightning-input-field field-name="Course__c"></lightning-input-field>
+                    <lightning-input-field field-name="Start_Date__c"></lightning-input-field>
+                    <lightning-input-field field-name="Region__c"></lightning-input-field>
+                    <lightning-input-field field-name="Status__c"></lightning-input-field>
+                    <lightning-input-field field-name="Location__c"></lightning-input-field>
+    
+                    <lightning-button-group>
+                        <lightning-button class="slds-var-m-top_small" type="submit" label="Create New"></lightning-button>
+                        <lightning-button class="slds-var-m-top_small" label="Cancel" onclick={doCancel}></lightning-button>
+                    </lightning-button-group>
+                        
+                </lightning-record-edit-form>
+            </div>
+        </lightning-card>
+    </lightning-modal-body>
+</template>
