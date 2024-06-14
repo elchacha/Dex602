@@ -118,14 +118,6 @@ export default class StudentBrowserForm extends NavigationMixin(LightningElement
 		refreshApex(this._wired_getDeliveriesByInstructor);
 	}
 
-
-			subscribe(this.channelName, -1, messageCallback).then((response) => {
-		  console.log("Subscription request sent to: ", JSON.stringify(response.channel)
-		  );
-		  this.subscription = response;
-		});
-
-
 	async createNewDeliveryScreenFlow(info){
         const result = await tableScreenFlowModal.open({
             size: 'small',
