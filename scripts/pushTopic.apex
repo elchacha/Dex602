@@ -1,0 +1,10 @@
+PushTopic pushTopic = new PushTopic();
+pushTopic.Name = 'CourseDeliveryCreation';
+pushTopic.Query = 'SELECT Id,Name FROM Course_Delivery__c';
+pushTopic.ApiVersion = 60.0;
+pushTopic.NotifyForOperationCreate = true;
+pushTopic.NotifyForOperationUpdate = false;
+pushTopic.NotifyForOperationUndelete = false;
+pushTopic.NotifyForOperationDelete = false;
+pushTopic.NotifyForFields = 'Referenced';
+insert pushTopic;
