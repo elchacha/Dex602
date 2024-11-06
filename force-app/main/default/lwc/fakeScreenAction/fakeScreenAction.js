@@ -19,9 +19,9 @@ export default class Sa_Enquete_Transmettre extends LightningElement {
     isLoading = true;
 
     callApex() {
-        doSomething({ myRecordId: this.recordId})
+        doSomething({ myRecordId: this._recordId})
         .then(() => {
-            getRecordNotifyChange([{recordId: this.recordId}]);
+            getRecordNotifyChange([{recordId: this._recordId}]);
             this.isLoading=false;
             this.closeAction();
         })
