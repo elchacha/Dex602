@@ -1,0 +1,20 @@
+ouvrir l'url : 
+https://www.programiz.com/javascript/online-compiler/
+
+
+puis remplacer dans le code ci-dessous les infos par celle qui réponde à vos besoins.
+
+let compDefinition = {
+            componentDef: "c:selCmpUploadFileModal",
+            attributes: {
+                recordId : "a05KI000000MqeYYAS",
+                listeIds:['a0CKO000000RD482AG']
+            }
+          };
+console.log('/one/one.app#'+btoa(JSON.stringify(compDefinition)));
+
+executer le code pour obtenir qq chose commme : 
+/one/one.app#eyJjb21wb25lbnREZWYiOiJjOnNlbENtcFVwbG9hZEZpbGVNb2RhbCIsImF0dHJpYnV0ZXMiOnsicmVjb3JkSWQiOiJhMDVLSTAwMDAwME1xZVlZQVMiLCJsaXN0ZUlkcyI6WyJhMENLTzAwMDAwMFJENDgyQUciXX19
+
+
+recopier l'url dans votre Salesforce et vous avez accès à votre lwc 
