@@ -23,7 +23,8 @@ export default class StudentBrowserForm extends NavigationMixin(LightningElement
 	channelName='/topic/CourseDeliveryCreation?CreatedById='+Id;
 
 	connectedCallback() {
-		subscribe(this.channelName, -1, refreshData).then((response) => {
+		// don't forget to add a bind(this) to refreshData method. otherwise, the this._wired_getDeliveriesByInstructor will be unknown
+		subscribe(this.channelName, -1, this.refreshData.bind(this)).then((response) => {
 			this.subscription = response;
 		});
 	}
@@ -55,7 +56,7 @@ export default class StudentBrowserForm extends NavigationMixin(LightningElement
 		this._wired_getDeliveriesByInstructor = result;
 		this.deliveries = [];
 		if (result.data && result.data.length) {
-			
+			console.log('result.data>'+result.data.length);
 			this.deliveries = result.data.map(delivery => ({
 				value: delivery.Id,
 				label: `${delivery.Start_Date__c} ${delivery.Location__c} ${delivery.Attendee_Count__c} students`
