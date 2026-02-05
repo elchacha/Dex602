@@ -21,4 +21,4 @@ modification du composant initial pour mettre en pratique 4 solutions pour force
 - https://cssgenerator.org/box-shadow-css-generator.html
 - https://www.salesforceicons.com/
 - https://github.com/tsalb/lwc-utils/wiki/soqlDatatable
-- 
+- https://trailblazercommunitygroups.com/salesforce-developer-group-paris-france/ 
